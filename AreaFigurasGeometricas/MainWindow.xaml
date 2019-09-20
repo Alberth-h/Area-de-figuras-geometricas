@@ -6,40 +6,49 @@
         xmlns:local="clr-namespace:AreaFigurasGeometricas"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FF050615">
-        <TextBlock HorizontalAlignment="Left" Foreground="White" FontSize="20" Margin="263,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Área de figu"/><Run Text="r"/><Run Text="as geom"/><Run Text="é"/><Run Text="tricas"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Foreground="White" FontSize="15" Margin="173,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Rect"/><Run Text="á"/><Run Text="ngulo"/></TextBlock>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF121538" Offset="1"/>
+                <GradientStop Color="#FE08082E" Offset="0.813"/>
+                <GradientStop Color="#FE07072B" Offset="0.447"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <TextBlock HorizontalAlignment="Left" Foreground="White" FontSize="20" Margin="269,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Área de figu"/><Run Text="r"/><Run Text="as geom"/><Run Text="é"/><Run Text="tricas"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" FontSize="15" Margin="175,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Rect"/><Run Text="á"/><Run Text="ngulo"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="124,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="B"/><Run Text="ase"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="262,89,0,0" TextWrapping="Wrap" Text="Altura" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="270,89,0,0" TextWrapping="Wrap" Text="Altura" VerticalAlignment="Top"/>
         <TextBox x:Name="txtBaseRec" HorizontalAlignment="Left" Height="23" Margin="77,110,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtAlturaRec" HorizontalAlignment="Left" Height="23" Margin="226,110,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnCalcularRec" Content="Calcular" HorizontalAlignment="Left" Margin="174,144,0,0" VerticalAlignment="Top" Width="75" BorderBrush="Black" Background="White" Click="BtnCalcularRec_Click"/>
+        <TextBox x:Name="txtAlturaRec" HorizontalAlignment="Left" Height="23" Margin="227,110,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnCalcularRec" Content="Calcular" HorizontalAlignment="Left" Margin="175,144,0,0" VerticalAlignment="Top" Width="75" BorderBrush="Black" Background="White" Click="BtnCalcularRec_Click"/>
         <TextBox x:Name="txtAreaRec" HorizontalAlignment="Left" Height="23" Margin="154,192,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="199,171,0,0" TextWrapping="Wrap" Text="Área" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Foreground="White" FontSize="15" Margin="529,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Triangulo"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" FontSize="15" Margin="530,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Triangulo"/>
         <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="473,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="B"/><Run Text="ase"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="611,89,0,0" TextWrapping="Wrap" Text="Altura" VerticalAlignment="Top"/>
         <TextBox x:Name="txtBaseTri" HorizontalAlignment="Left" Height="23" Margin="426,110,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtAlturaTri" HorizontalAlignment="Left" Height="23" Margin="575,110,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnCalcularTri" Content="Calcular" HorizontalAlignment="Left" Margin="523,144,0,0" VerticalAlignment="Top" Width="75" BorderBrush="Black" Background="White" Click="BtnCalcularTri_Click"/>
-        <TextBox x:Name="txtAreaTri" HorizontalAlignment="Left" Height="23" Margin="503,192,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAreaTri" HorizontalAlignment="Left" Height="23" Margin="501,192,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="548,171,0,0" TextWrapping="Wrap" Text="Área" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Foreground="White" FontSize="15" Margin="190,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Circulo"/>
-        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="199,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Radio"/>
-        <TextBox x:Name="txtRadio" HorizontalAlignment="Left" Height="23" Margin="152,290,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="198,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Radio"/>
+        <TextBox x:Name="txtRadio" HorizontalAlignment="Left" Height="23" Margin="153,290,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnCalcularCir" Content="Calcular" HorizontalAlignment="Left" Margin="174,324,0,0" VerticalAlignment="Top" Width="75" BorderBrush="Black" Background="White" Click="BtnCalcularCir_Click"/>
-        <TextBox x:Name="txtAreaCir" HorizontalAlignment="Left" Height="23" Margin="154,372,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="199,351,0,0" TextWrapping="Wrap" Text="Área" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Foreground="White" FontSize="15" Margin="535,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Trapecio"/>
-        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="402,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="B"/><Run Text="as"/><Run Text="e Mayor"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="533,269,0,0" TextWrapping="Wrap" Text="Base Menor" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtBaseMa" HorizontalAlignment="Left" Height="23" Margin="371,290,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtBaseMe" HorizontalAlignment="Left" Height="23" Margin="506,290,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAreaCir" HorizontalAlignment="Left" Height="23" Margin="153,372,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="200,351,0,0" TextWrapping="Wrap" Text="Área" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" FontSize="15" Margin="532,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Trapecio"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="397,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="B"/><Run Text="as"/><Run Text="e Mayor"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="528,269,0,0" TextWrapping="Wrap" Text="Base Menor" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBaseMa" HorizontalAlignment="Left" Height="23" Margin="366,290,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtBaseMe" HorizontalAlignment="Left" Height="23" Margin="501,290,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnCalcularTrap" Content="Calcular" HorizontalAlignment="Left" Margin="523,324,0,0" VerticalAlignment="Top" Width="75" BorderBrush="Black" Background="White" Click="BtnCalcularTrap_Click"/>
         <TextBox x:Name="txtAreaTrap" HorizontalAlignment="Left" Height="23" Margin="503,372,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="548,351,0,0" TextWrapping="Wrap" Text="Área" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="683,269,0,0" TextWrapping="Wrap" Text="Altura" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtAlturaTrap" HorizontalAlignment="Left" Height="23" Margin="640,290,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="678,269,0,0" TextWrapping="Wrap" Text="Altura" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAlturaTrap" HorizontalAlignment="Left" Height="23" Margin="635,290,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

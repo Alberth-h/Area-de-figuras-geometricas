@@ -94,5 +94,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="descarga %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="trapèze-png-2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
